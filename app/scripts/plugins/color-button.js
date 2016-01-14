@@ -19,7 +19,7 @@
     },
     getColor: function() {
       var currentIndex = this.colorIndex;
-      this.colorIndex = (this.colorIndex + 1) % 3;
+      this.colorIndex = (this.colorIndex + 1) % this.settings.colors.length;
 
       return this.settings.colors[currentIndex];
     }
